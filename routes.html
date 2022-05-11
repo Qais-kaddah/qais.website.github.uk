@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>routes</title>
+    <title>Routes</title>
 </head>
 <body>
     <style>
         * {
             margin: 0;
+            padding: 0;
             font-family: Calibri, sans-serif;
             background: none;
+            box-sizing: border-box;
         }
         
         .flexsettings {
@@ -171,12 +173,11 @@
     vertical-align: middle;    
 }
 .im3{
-    width: 200vh;
         
         position: relative;
         top: 0px; background-size: contain; 
-    width:189vh;
-    height: 40vh;
+        width:100%;
+        height: 40vh;
    
 }
 .img-road{
@@ -204,12 +205,34 @@ a:visited{
             color: aliceblue;
             width: 100px;
         }
+
+.map{
+width: 100%;
+height: 70vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+iframe{
+    width: 80%;
+    height: 500px;
+}
+.map2{
+width: 100%;
+height: 70vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}     
         
    
     </style>
     
     <body>
 		<header class="flexsettings stickysettings">
+            
 			<div>	
                 <a href="Home.html"> <img  src="img/Logo.png" alt="logo" class="logo"></a>
 			</div>
@@ -243,27 +266,19 @@ a:visited{
     <p>cycling routes around Newcastle Upon Tyne</p>
     <hr>
     </div>
-    <div>
-        <a href="https://www.gateshead.gov.uk/article/4440/Cycling-routes"> <img class="im1" src="img/img.road.jpg"></a>
-              <span>Cycling trail from the Swalwell Visitor Centre/Derwenthaugh Park Car Park</span>
-        
-              
-              <hr>
-              <a href="https://www.gateshead.gov.uk/article/4440/Cycling-routes"> <img class="im1" src="img/img.road.jpg"></a>
-              <span>Cycleway links from Swawell</span>
-              <hr>
-              
-      </div>   
-      <div>
-        <a href="https://www.komoot.com/smarttour/4089068"> <img class="im1" src="img/3.png"></a>
-              <span>Deep in to the underworld – Tanfield Railway Loop from Byker</span>
-              <hr>
-              
-              <a href="https://www.komoot.com/smarttour/1357537"> <img class="im1" src="img/bridge1.jpg"></a>
-              <span>Gateshead Millennium Bridge Loop from West Jesmond</span>
-              <hr>
-              
-      </div>   
+    <div class="map">
+           <h1>Opto - GRC capheaton</h1>
+           <iframe src="https://www.google.com/maps/d/embed?mid=1FYOcTpwoO5_NehwjCqrkNdcr2212lPU_&hl=en&ehbc=2E312F" 
+           width="640" height="480"></iframe>
+    </div>
+
+
+    <div class="map2">
+        <h1>Coast and Castles - coast variation</h1>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1qLDZsi3pC3aytPiz7od1omE7wL48KM1a&ehbc=2E312F"
+         width="640" height="480"></iframe>
+    </div>
+    
     
     </body>
     
