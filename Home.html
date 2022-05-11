@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>media test</title>
+</head>
+<body>
+    
+	<head>
+		<title>Media Query Support</title>
+
+		<style>
+			* {
+				margin: 0;
+				font-family: Calibri, sans-serif;
+                background: none;
+			}
+			
+			.flexsettings {
+				display: flex;
+				justify-content: space-evenly;
+				align-content: center;
+				align-items: center;
+			}
+			
+			.flexsettings {
+				display: flex;
+				justify-content: space-evenly;
+				align-content: center;
+				align-items: center;
+			}
+			
+			
+			header {
+                position: relative;
+				height: 10vh;
+				background-color: #000;
+				border-bottom: solid medium #999; 
+			}
+			
+			main {
+				height: 215vh;
+			}
+			
+			footer {
+                position: sticky;
+				height: 13vh;
+				background-color: #000;
+				border-top: solid medium #999;
+			}
+			
+			footer div h3 {
+                position: relative;
+				font-style: italic;
+			}
+			
+			#butstyle {
+				background-color: #999;
+				font-weight: bold;
+				color: #000;
+			}
+        
+            #butstyle2 {
+				background-color: #999;
+				font-weight: bold;
+				color: #000;
+			}
+            .container{
+                display: flex;
+				justify-content: space-evenly;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                text-align: center;
+                min-height: 10vh;
+            }
+            .butstyle{
+                display: flex;
+                width: 140px;
+                height: 39px;
+                border: none;
+                color: white;
+                background-color: rgb(255, 0, 68);
+                border-radius: 4px;
+                box-shadow: inset 0 0 0 0 #f9e506;
+                transition: ease-out 0.3s;
+                font-size: 30px;
+                outline: none;
+            }
+
+            .butstyle:hover {
+                box-shadow: inset 150px 0 0 0 #f9e506;
+                cursor: pointer;
+                color: #000;
+            }
+            .butstyle2{
+                display: flex;
+				justify-content: space-evenly;
+                width: 140px;
+                height: 39px;
+                border: none;
+                color: white;
+                background-color: rgb(255, 0, 68);
+                border-radius: 4px;
+                box-shadow: inset 0 0 0 0 #f9e506;
+                transition: ease-out 0.3s;
+                font-size: 30px;
+                outline: none;
+            }
+
+            .butstyle2:hover {
+                box-shadow: inset 140px 0 0 0 #f9e506;
+                cursor: pointer;
+                color: #000;
+            }
+
+
+			
+			@media screen and (max-width: 700px) {
+				footer {
+					height: 20vh;
+					flex-direction: column;
+				}
+				
+				footer div {
+					flex-direction: column;
+				}
+				
+			}
+			nav{
+				float: right;
+				
+			}
+			nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+			}
+		
+			nav li {
+		display: inline-block;
+        margin: 38px;
+		
+		position: sticky;
+			}
+		
+			nav a{
+				color: #F25C05;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 20px;
+			}
+			nav a:hover {
+        color: #F25C05;
+    }
+
+    nav a::before{
+        content: '';
+        display: block;
+        height: 3px;
+        width: 100;
+        background-color: #F25C05;
+
+        position: absolute;
+        top: 0;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+
+    }
+
+    nav a:hover::before{
+        width: 100%;
+    }
+	.logo {
+        position: sticky;
+        float: left;
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        transition: 0.7s;
+        height: 102px;
+	} 
+    .banner-area{
+        width: 20vh;
+        height: 10vh;
+        position: sticky;
+        top: 0px;
+        
+    }
+    .content-area{
+        width: 100%;
+        position: relative;
+        top: 660px;
+        background: #ddd;
+        height: 1390px;
+        
+    }
+    .h2{
+    background-color: aliceblue;
+}
+
+
+.wrapper{
+    font-size: 25px;
+    width: 1900px;
+    margin: 0 auto;
+    }
+    .h1{
+        color: #F25C05;
+       font-size: 20px;
+    }
+    a { text-decoration: none; }
+    a:visited{
+        text-decoration: none;
+
+        color:#F25C05;
+    }
+    .im6{
+       margin-left: 50px;
+       margin-right: 20px;
+    
+    object-position: left; 
+    width: 400px;
+    height: 300px;
+    object-fit: fill;}
+    .im7{
+        margin-left: 270px;
+        margin-right: 20px;
+        width: 550px;
+        height: 500px;
+        object-fit: fill;}
+        .h3{
+            color: aliceblue;
+        }
+        
+		</style>
+	</head>
+
+	<body>
+		
+	
+		<main>
+            <header class="flexsettings stickysettings">
+                <div>	
+                    <a href="Home.html"> <img  src="img/Logo.png" alt="logo" class="logo"></a>
+                </div>
+                <div class="h1">
+                    <a href="Home.html"> <h1>Rock'n'Rolling</h1></a>
+                </div>
+                
+                
+                    <div>
+                    <nav>
+                <ul>
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="bikes.html">BIKES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="routes.html">ROUTES</a></li>
+                <li><a href="contact.html">Contact US </a></li>
+                </ul>
+                    </nav>
+                </div>
+                
+    
+                
+            </header>
+		 <div class="banner-area">
+        <img src="img/154-1547668_blue-vintage-bike-for-1920-x-1080-hdtv.jpg" alt="bike image">
+
+    </div>
+    <div class="content-area">
+        <div class="wrapper">
+            <a href="about.html"><h2>Rock’n’Rollin Bike Club</h2></a>
+        
+            
+            <p><b>Website</b> to support members of the public getting involved in the different aspects of <b>cycling</b> as a sport.The main goal of the website to both inform members of the community of the different types of <b>bikes</b>available, support the development of useful skills for the different aspects of the <b>sport</b> and recommend places/ applications available to get out and about.</p>
+        </div>
+            <hr><br>
+            <a href="bikes.html"> <div>
+                <img class="im6" src="img/Photos/Hardtail/Ghost_Kato_Advanced_27.5_Hardtail-removebg-preview.png">
+                     <img class="im6" src="img/Photos/Hardtail/Vitus_Nucleus_27_VRS-removebg-preview.png">
+                     <img class="im6" src="img/Photos/Gravel/Vitus_Substance_SRS-1_Adventure_Road-removebg-preview.png">
+                     <img class="im6" src="img/Photos/Full Suspension/Vitus_Sommet_29_CR-removebg-preview.png">
+                     
+             </div></a>
+             <hr>
+             <hr>
+                <div>
+                   <a href="https://www.komoot.com/smarttour/4089068"> <img class="im7" src="img/3.png"></a>
+                   <a href="https://www.komoot.com/smarttour/1357537"> <img class="im7" src="img/bridge1.jpg"></a>             
+                </div> 
+                <hr>
+		</main>
+	
+		<footer class="flexsettings">
+			<div class="h3">
+				<h3>Follow us</h3>
+			</div>
+			<div class="container">
+				<a href="https://www.facebook.com/facebookappUK"><button class="butstyle">Facebook</button></a>
+				
+                
+                
+			</div>
+            <div>
+                <a href="https://www.instagram.com/instagram/"><button class="butstyle2">Instagram</button></a>
+            </div>
+		</footer>
+	</body>
+</html> 
+    
+</body>
+</html>
